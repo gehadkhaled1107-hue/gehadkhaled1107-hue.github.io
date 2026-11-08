@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Gehad Khaled – Computer Science Student & Software Intern Candidate</title>
+<meta name="description" content="Portfolio of Gehad Khaled, CS student at FCAI-CU. C++ and Python projects in algorithms, data structures, GUI and web apps.">
+<style>
+:root{--bg:#f6f7f9;--ink:#101828;--mute:#566074;--line:#d8dde6;--acc:#2a4fe0;--accbg:#e6ebff;--bar:#2a4fe0;--bar2:#101828;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1320;--ink:#e8ebf3;--mute:#9aa4b8;--line:#263049;--acc:#8ca2ff;--accbg:#1a2340;--bar:#8ca2ff;--bar2:#e8ebf3;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1320;--ink:#e8ebf3;--mute:#9aa4b8;--line:#263049;--acc:#8ca2ff;--accbg:#1a2340;--bar:#8ca2ff;--bar2:#e8ebf3;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:var(--acc);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--acc);outline-offset:3px;border-radius:3px}
+.wrap{max-width:960px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif;font-weight:700;line-height:1.15;margin:0}
+nav{display:flex;gap:22px;flex-wrap:wrap;padding:20px 0;font-size:15px;border-bottom:1px solid var(--line)}
+nav a{color:var(--mute);text-decoration:none}nav a:hover{color:var(--ink)}
+nav .me{color:var(--ink);font-weight:700;margin-right:auto}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;padding:72px 0 64px}
+.hero h1{font-size:clamp(40px,7vw,68px);letter-spacing:-.02em}
+.hero p.lead{font-size:19px;color:var(--mute);max-width:34ch;margin:18px 0 26px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 20px;border:1.5px solid var(--ink);border-radius:6px;color:var(--ink);text-decoration:none;font-weight:600;font-size:15px}
+.btn.p{background:var(--ink);color:var(--bg)}
+.viz{border:1px solid var(--line);border-radius:10px;padding:16px 16px 10px}
+#bars{display:flex;align-items:flex-end;gap:5px;height:180px}
+#bars i{flex:1;background:var(--bar);border-radius:3px 3px 0 0;transition:height .12s}
+#bars i.k{background:var(--bar2)}
+.cap{font-size:13px;color:var(--mute);margin:10px 0 0}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-size:30px;margin-bottom:26px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.about p{margin:0 0 14px;max-width:62ch}
+dl{margin:0}dt{font-weight:700;font-size:15px}dd{margin:0 0 14px;color:var(--mute);font-size:15px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.tags li{font-size:13.5px;padding:3px 10px;border-radius:99px;background:var(--accbg);color:var(--acc)}
+.proj{display:grid;grid-template-columns:260px 1fr;gap:12px 36px;padding:28px 0;border-top:1px solid var(--line)}
+.proj:first-of-type{border-top:0;padding-top:0}
+.proj h3{font-size:23px}
+.role{display:inline-block;margin-top:8px;font-size:13px;font-weight:600;padding:2px 9px;border:1.5px solid var(--acc);border-radius:4px;color:var(--acc)}
+.proj p{margin:0 0 12px;max-width:60ch}
+.mine{color:var(--mute);font-size:15.5px}
+.mine b{color:var(--ink)}
+.more{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.m{padding:18px 0;border-top:1px solid var(--line)}
+.m h3{font-size:19px;margin-bottom:4px}
+.m p{margin:0 0 8px;font-size:15.5px;color:var(--mute)}
+.m .role{margin:0 0 8px}
+.edu{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+.edu div{padding:14px 0;border-top:1px solid var(--line)}
+.edu b{display:block}.edu span{color:var(--mute);font-size:15px}
+.contact a{font-size:20px;display:block;margin:6px 0}
+footer{padding:28px 0 40px;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
+@media (max-width:760px){.hero,.about,.proj,.more,.edu{grid-template-columns:1fr}.hero{padding:44px 0}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav aria-label="Main"><a class="me" href="#top">Gehad Khaled</a><a href="#about">About</a><a href="#projects">Projects</a><a href="#more">More work</a><a href="#contact">Contact</a></nav>
+
+<header class="hero" id="top">
+<div>
+<h1>Gehad Khaled</h1>
+<p class="lead">Computer Science student at Cairo University (FCAI-CU), looking for a software internship. I like algorithms, clean data structures and turning them into working programs.</p>
+<div class="btns"><a class="btn p" href="#projects">See my projects</a><a class="btn" href="mailto:gehadkhaled1107@gmail.com">Email me</a></div>
+</div>
+<div class="viz" aria-label="Animation of an insertion sort running on a row of bars">
+<div id="bars"></div>
+<p class="cap">Insertion sort, running live. The same family of algorithms I compare in my Smart Order Processing project.</p>
+</div>
+</header>
+
+<section id="about">
+<h2>About</h2>
+<div class="about">
+<div>
+<p>I’m a Computer Science student at the Faculty of Computers and Artificial Intelligence, Cairo University, with a strong foundation in software development and problem solving.</p>
+<p>My core focus is competitive programming, data structures and algorithms in C++ and Python. I’ve built desktop, web and data projects, both alone and in teams of three or four.</p>
+<ul class="tags" aria-label="Skills"><li>C++</li><li>Python</li><li>Data structures</li><li>Algorithms</li><li>OOP</li><li>Qt</li><li>Flask</li><li>SQLite</li><li>pandas</li><li>Streamlit</li><li>Git &amp; GitHub</li></ul>
+</div>
+<dl>
+<dt>Samsung Innovation Campus</dt><dd>Coding &amp; Programming Track, completed</dd>
+<dt>NTI</dt><dd>Python Training, completed</dd>
+<dt>InnovEgypt (ITIDA/TIEC)</dt><dd>Innovation and entrepreneurship program, graduate</dd>
+<dt>180 Degrees</dt><dd>Student activity, member</dd>
+</dl>
+</div>
+</section>
+
+<section id="projects">
+<h2>Featured projects</h2>
+
+<article class="proj">
+<div><h3>CitizenFix</h3><span class="role">Team of 4</span></div>
+<div>
+<p>A complaint management system for a residential community. Citizens submit complaints, operations teams are assigned, and admins track reports. Built as the Samsung Innovation Campus graduation project.</p>
+<p class="mine"><b>My part:</b> the core domain model. Constants, input validators (Egyptian phone numbers, ticket and apartment IDs, dates), a custom exception hierarchy, and the Complaint class with a status workflow (Pending, Assigned, In Progress, Resolved), automatic priority and SLA deadlines.</p>
+<ul class="tags"><li>Python</li><li>OOP</li><li>Streamlit</li></ul>
+</div>
+</article>
+
+<article class="proj">
+<div><h3>Smart Order Processing</h3><span class="role">Solo</span></div>
+<div>
+<p>Five sorting algorithms written from scratch (bubble, selection, insertion, merge and quick), each counting comparisons and swaps. The system checks whether data is sorted, nearly sorted or random, then picks the best algorithm and explains why.</p>
+<p class="mine">Also includes an anagram checker that plugs in any of the sorting functions.</p>
+<ul class="tags"><li>Python</li><li>Algorithms</li><li>Complexity analysis</li></ul>
+</div>
+</article>
+
+<article class="proj">
+<div><h3>Training Activity Dashboard</h3><span class="role">Solo</span></div>
+<div>
+<p>An interactive Streamlit dashboard for training programs across Egyptian cities. Sidebar filters drive KPI cards with deltas, Plotly and Altair charts, a map, an editable data table and CSV export.</p>
+<p class="mine">Runs on generated sample data, so it works out of the box.</p>
+<ul class="tags"><li>Streamlit</li><li>pandas</li><li>Plotly</li><li>Altair</li></ul>
+</div>
+</article>
+
+<article class="proj">
+<div><h3>Helping Hands</h3><span class="role">Team</span></div>
+<div>
+<p>A donation platform where requesters post help requests, admins approve or reject them, and donors pledge support to approved ones. Includes role-based access, search and filtering, and a seed script for demo data.</p>
+<p class="mine"><b>My part:</b> the database layer (SQLite).</p>
+<ul class="tags"><li>Flask</li><li>SQLite</li><li>Python</li></ul>
+</div>
+</article>
+
+<article class="proj">
+<div><h3>Baby Photoshop</h3><span class="role">Team</span></div>
+<div>
+<p>A desktop image editor with around 18 filters, undo, load and save, and a warning before closing with unsaved changes. Built with C++17 and Qt 6.</p>
+<p class="mine"><b>My part:</b> the entire GUI, plus four filters: grayscale, merge, sunlight and flip.</p>
+<ul class="tags"><li>C++17</li><li>Qt 6</li><li>CMake</li></ul>
+</div>
+</article>
+</section>
+
+<section id="more">
+<h2>More work</h2>
+<div class="more">
+<div class="m"><h3>Smart Service Center Engine</h3><span class="role">Solo</span><p>Command-line request manager with a hand-built Stack, Queue and hash table (separate chaining), plus sorting and searching with performance stats.</p></div>
+<div class="m"><h3>Session Scheduler</h3><span class="role">Solo</span><p>Picks the largest conflict-free set of training sessions using merge sort and a greedy algorithm.</p></div>
+<div class="m"><h3>Smart Bank System</h3><span class="role">Team</span><p>Command-line banking app with wallets, ATM grid and admin reports. I built authentication and the JSON data layer, and helped with final integration.</p></div>
+<div class="m"><h3>Mini E-Commerce Order System</h3><span class="role">Team of 4</span><p>I built checkout: an order state machine, a discount closure, invoices, and cancellation that restores stock.</p></div>
+<div class="m"><h3>SkillQuest</h3><span class="role">Team</span><p>Workshop and learning-event planner with admin tools, search, sorting, and a recursive cost calculator for each user’s learning plan.</p></div>
+<div class="m"><h3>Sales Analysis</h3><span class="role">Solo</span><p>Cleans messy sales data with pandas, then runs statistics, IQR outlier detection and rolling-mean trends with matplotlib charts.</p></div>
+<div class="m"><h3>Smart Turtle Command Engine</h3><span class="role">Solo</span><p>Draws shapes from text commands using a closure and a regex dispatch table. Invalid commands are rejected safely.</p></div>
+<div class="m"><h3>Stack-based Code Editor</h3><span class="role">Solo</span><p>Line editor with undo built on a stack, a bracket matcher and an HTML tag validator.</p></div>
+</div>
+<p style="margin-top:22px"><a href="https://github.com/gehadkhaled1107-hue">All repositories on GitHub</a></p>
+</section>
+
+<section id="contact" class="contact">
+<h2>Contact</h2>
+<p>I’m open to internships. The quickest way to reach me is email.</p>
+<a href="mailto:gehadkhaled1107@gmail.com">gehadkhaled1107@gmail.com</a>
+<a href="https://github.com/gehadkhaled1107-hue">github.com/gehadkhaled1107-hue</a>
+<a href="https://www.linkedin.com/in/gehad-khaled-cs">linkedin.com/in/gehad-khaled-cs</a>
+</section>
+
+<footer>© 2026 Gehad Khaled</footer>
+</div>
+
+<script>
+(function(){
+var box=document.getElementById('bars'),N=16,a=[],i,j,timer;
+var still=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+for(i=0;i<N;i++){box.appendChild(document.createElement('i'))}
+var els=box.children;
+function draw(k){for(var x=0;x<N;x++){els[x].style.height=(a[x]*8+12)+'px';els[x].className=(x===k)?'k':''}}
+function shuffle(){a=[];for(var x=1;x<=N;x++)a.push(x);for(var y=N-1;y>0;y--){var r=Math.floor(Math.random()*(y+1)),t=a[y];a[y]=a[r];a[r]=t}}
+function run(){
+shuffle();draw(-1);i=1;j=1;
+timer=setInterval(function(){
+if(i>=N){clearInterval(timer);draw(-1);setTimeout(run,2200);return}
+if(j>0&&a[j-1]>a[j]){var t=a[j];a[j]=a[j-1];a[j-1]=t;draw(j-1);j--}
+else{i++;j=i}
+},70)}
+if(still){a=[];for(i=1;i<=N;i++)a.push(i);draw(-1)}else{run()}
+})();
+</script>
+</body>
+</html>
